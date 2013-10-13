@@ -3,7 +3,7 @@ by Tim Teeling
 
 Sass based grid system
 
-Demo: [http://timteeling.github.io/tenablegrid/](http://timteeling.github.io/tenablegrid/]
+Demo: http://timteeling.github.io/tenablegrid/
 
 ## Usage
 <pre>
