@@ -1,7 +1,7 @@
 # Tenable Grid
 by Tim Teeling
 
-Sass based grid system
+Simple, responsive grid system written in Sass. Compatible with IE7+
 
 Demo: http://timteeling.github.io/tenablegrid/
 
