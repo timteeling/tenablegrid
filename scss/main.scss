@@ -1,0 +1,74 @@
+/*! Tenable Grid by Tim Teeling 
+
+A simple, responsive grid system written in Sass.
+
+*/
+
+@import 'normalize';
+@import 'grid';
+
+/* Code below for demo purposes only */
+
+body {
+  color: #fff;
+  background: #425363;
+  font: 100%/1.5 'lato', sans-serif;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.inverse {
+  background: #fff;
+  color: #425363;
+}
+
+.grid .columns {
+  background: lighten(#425363, 10%);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  h3 {
+    font-weight: 300;
+  }
+}
+
+pre {
+  background: #eee;
+  padding: $unit;
+}
+
+code {
+  font-family: monaco;
+}
+
+a,
+a:visited {
+  color: #425353;
+}
+
+.aligncenter {
+  display: block;
+  margin: auto !important;
+  float: none;
+}

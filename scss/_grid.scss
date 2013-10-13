@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/* Border Box FTW from Paul Irish */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Clearfix placeholder selector */
+%clearfix:before,
+%clearfix:after {
+    content: " ";
+    display: table;
+}
+
+%clearfix:after {
+    clear: both;
+}
+
+/* Grid */
+
+/* Set this gutter to whatever percentage you want. */
+$gutter: 5%;
+$unit: 1.5em;
+
+
+.container {
+  @extend %clearfix;
+  margin: 0 auto;
+  width: 92%;
+  max-width: 1400px; /* set to whatever you want */
+}
+
+.row {
+  @extend %clearfix;
+  padding: $unit 0;
+}
+
+.column,
+.columns {
+  margin-top: $unit;
+}
+
+.columns:first-child {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 38em) {
+
+  .column, .columns {
+    float: left;
+    margin-left: $gutter;
+    margin-top: 0;
+  }
+
+  .two {
+    width: (100% - $gutter * 4) / 5;
+  }
+
+  .three {
+    width: (100% - $gutter * 3 ) / 4;
+  }
+
+  .four {
+    width: (100% - $gutter * 2 ) / 3;
+  }
+
+  .five {
+    width: (100% - $gutter) * 5 / 12;
+  }
+
+  .six {
+    width: (100% - $gutter ) / 2;
+  }
+
+  .seven {
+    width: (100% - $gutter) * 7 / 12;
+  }
+
+  .eight {
+    width: 100% - ((100% - $gutter * 2 ) / 3) - $gutter;
+  }
+
+  .nine {
+    width: 100% - ((100% - $gutter * 3 ) / 4) - $gutter;
+  }
+
+  .ten {
+    width: 100% - ((100% - $gutter * 4 ) / 5) - $gutter;
+  }
+
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+}
